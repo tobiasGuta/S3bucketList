@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>S3Scanner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>S3Scanner</h1>
+    <div class="controls">
+      <label class="switch">
+        <input type="checkbox" id="recordingToggle">
+        <span class="slider round"></span>
+      </label>
+      <span id="statusText">Recording Off</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="exportBtn">Export JSON</button>
+    <button id="clearBtn">Clear All</button>
+  </div>
+
+  <div id="bucketList" class="bucket-list">
+    <!-- Buckets will be inserted here -->
+    <div class="empty-state">No buckets found yet.</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
